@@ -1,28 +1,28 @@
 # 📚 Livro de Receitas
 
-Uma aplicação web simples e elegante para gerenciar suas receitas favoritas, construída com HTML, CSS e JavaScript puro.
+Uma aplicação web simples para gerenciar suas receitas favoritas, construída com HTML, CSS e JavaScript puro.
 
-## 🌟 Funcionalidades
+##  Funcionalidades
 
-- ✨ Interface moderna e responsiva
-- 📝 Cadastro de receitas com nome, ingredientes e modo de preparo
-- 📋 Listagem de receitas em cards interativos
-- 💾 Armazenamento local (localStorage) para manter suas receitas mesmo após fechar o navegador
-- 🗑️ Possibilidade de excluir receitas
-- 📱 Design responsivo para todos os dispositivos
+-  Interface moderna e responsiva
+-  Cadastro de receitas com nome, ingredientes e modo de preparo
+-  Listagem de receitas em cards interativos
+-  Armazenamento local (localStorage) para manter suas receitas mesmo após fechar o navegador
+-  Possibilidade de excluir receitas
+-  Design responsivo para todos os dispositivos
 
 ## 🚀 Como Usar
 
 1. Clone este repositório:
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
+git clone [mandsd/Cadastro-de-Receitas]
 ```
 
 2. Abra o arquivo `index.html` em seu navegador
 
 Ou simplesmente acesse: [URL_DO_GITHUB_PAGES] (se disponível)
 
-## 📱 Como Usar a Aplicação
+##  Como Usar a Aplicação
 
 1. **Adicionar Nova Receita:**
    - Clique em "Nova Receita" no menu
@@ -43,9 +43,9 @@ Ou simplesmente acesse: [URL_DO_GITHUB_PAGES] (se disponível)
 
 ## 💻 Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (com variáveis CSS e Flexbox/Grid)
-- JavaScript (ES6+)
+- HTML
+- CSS
+- JavaScript 
 - Font Awesome para ícones
 - LocalStorage para persistência de dados
 
@@ -62,10 +62,3 @@ O projeto utiliza variáveis CSS que podem ser facilmente personalizadas no arqu
 }
 ```
 
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 🤝 Contribuindo
-
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
