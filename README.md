@@ -20,7 +20,7 @@ git clone [mandsd/Cadastro-de-Receitas]
 
 2. Abra o arquivo `index.html` em seu navegador
 
-Ou simplesmente acesse: [URL_DO_GITHUB_PAGES] (se disponível)
+Ou simplesmente acesse: [https://mandsd.github.io/Livro-de-receitas/] 
 
 ##  Como Usar a Aplicação
 
