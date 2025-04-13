@@ -1,6 +1,9 @@
 # 📚 Livro de Receitas
 
 Uma aplicação web simples para gerenciar suas receitas favoritas, construída com HTML, CSS e JavaScript puro.
+Alunos: 
+- Amanda Ferreira Dahm
+- Alessandro Ribeiro Moreira
 
 ##  Funcionalidades
 
