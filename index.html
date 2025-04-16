@@ -8,47 +8,101 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">📚 Livro de Receitas</div>
-        <div class="nav-links">
-            <button id="novaReceitaBtn" class="nav-btn active">
-                <i class="fas fa-plus"></i> Nova Receita
-            </button>
-            <button id="minhasReceitasBtn" class="nav-btn">
-                <i class="fas fa-book"></i> Minhas Receitas
-            </button>
+    <div id="authSection" class="section active">
+        <div class="auth-container">
+            <div class="auth-box">
+                <h2><i class="fas fa-user"></i> Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email*</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Senha*</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-sign-in-alt"></i> Entrar
+                    </button>
+                    <p class="auth-link">
+                        Não tem uma conta? <a href="#" id="showRegister">Criar cadastro</a>
+                    </p>
+                </form>
+            </div>
+
+            <div class="auth-box" id="registerBox" style="display: none;">
+                <h2><i class="fas fa-user-plus"></i> Criar Conta</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="registerName">Nome*</label>
+                        <input type="text" id="registerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email*</label>
+                        <input type="email" id="registerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Senha*</label>
+                        <input type="password" id="registerPassword" required minlength="6">
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-user-plus"></i> Criar Conta
+                    </button>
+                    <p class="auth-link">
+                        Já tem uma conta? <a href="#" id="showLogin">Voltar para login</a>
+                    </p>
+                </form>
+            </div>
         </div>
-    </nav>
+    </div>
 
-    <main>
-        <section id="formSection" class="section active">
-            <h2><i class="fas fa-utensils"></i> Nova Receita</h2>
-            <form id="recipeForm">
-                <div class="form-group">
-                    <label for="recipeName">Nome da Receita*</label>
-                    <input type="text" id="recipeName" required>
-                </div>
-                <div class="form-group">
-                    <label for="ingredients">Ingredientes*</label>
-                    <textarea id="ingredients" rows="4" required placeholder="Digite um ingrediente por linha"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="instructions">Modo de Preparo*</label>
-                    <textarea id="instructions" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="btn-submit">
-                    <i class="fas fa-save"></i> Salvar Receita
+    <div id="appSection" class="section">
+        <nav class="navbar">
+            <div class="logo">📚 Livro de Receitas</div>
+            <div class="nav-links">
+                <button id="novaReceitaBtn" class="nav-btn active">
+                    <i class="fas fa-plus"></i> Nova Receita
                 </button>
-            </form>
-        </section>
+                <button id="minhasReceitasBtn" class="nav-btn">
+                    <i class="fas fa-book"></i> Minhas Receitas
+                </button>
+                <button id="logoutBtn" class="nav-btn">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </button>
+            </div>
+        </nav>
 
-        <section id="listSection" class="section">
-            <h2><i class="fas fa-book-open"></i> Minhas Receitas</h2>
-            <div id="recipeList" class="recipe-grid"></div>
-        </section>
-    </main>
+        <main>
+            <section id="formSection" class="section">
+                <h2><i class="fas fa-utensils"></i> Nova Receita</h2>
+                <form id="recipeForm">
+                    <div class="form-group">
+                        <label for="recipeName">Nome da Receita*</label>
+                        <input type="text" id="recipeName" required minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <label for="ingredients">Ingredientes*</label>
+                        <textarea id="ingredients" rows="4" required placeholder="Digite um ingrediente por linha"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="instructions">Modo de Preparo*</label>
+                        <textarea id="instructions" rows="6" required minlength="10"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-save"></i> Salvar Receita
+                    </button>
+                </form>
+            </section>
+
+            <section id="listSection" class="section">
+                <h2><i class="fas fa-book-open"></i> Minhas Receitas</h2>
+                <div id="recipeList" class="recipe-grid"></div>
+            </section>
+        </main>
+    </div>
 
     <script src="js/recipeManager.js"></script>
+    <script src="js/authManager.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

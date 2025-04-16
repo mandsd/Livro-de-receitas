@@ -1,5 +1,6 @@
 class RecipeManager {
-    constructor() {
+    constructor(authManager) {
+        this.authManager = authManager;
         this.recipes = [];
         this.loadFromLocalStorage();
     }
@@ -16,22 +17,45 @@ class RecipeManager {
     }
 
     addRecipe(recipe) {
+        const user = this.authManager.getCurrentUser();
+        if (!user) throw new Error('Usuário não autenticado');
+
         recipe.id = Date.now().toString();
-        this.recipes.push(recipe);
-        this.saveToLocalStorage();
+        user.recipes.push(recipe);
+        this.saveUserRecipes(user);
         return recipe;
     }
 
     deleteRecipe(id) {
-        this.recipes = this.recipes.filter(recipe => recipe.id !== id);
-        this.saveToLocalStorage();
+        const user = this.authManager.getCurrentUser();
+        if (!user) throw new Error('Usuário não autenticado');
+
+        user.recipes = user.recipes.filter(recipe => recipe.id !== id);
+        this.saveUserRecipes(user);
     }
 
     getAllRecipes() {
-        return this.recipes;
+        const user = this.authManager.getCurrentUser();
+        if (!user) throw new Error('Usuário não autenticado');
+        return user.recipes;
     }
 
     getRecipe(id) {
-        return this.recipes.find(recipe => recipe.id === id);
+        const user = this.authManager.getCurrentUser();
+        if (!user) throw new Error('Usuário não autenticado');
+        return user.recipes.find(recipe => recipe.id === id);
+    }
+
+    saveUserRecipes(user) {
+        const authManager = this.authManager;
+        const users = authManager.users;
+        const userIndex = users.findIndex(u => u.id === user.id);
+        
+        if (userIndex !== -1) {
+            users[userIndex] = user;
+            authManager.users = users;
+            authManager.saveUsers();
+        }
     }
 }
+
