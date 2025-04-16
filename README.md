@@ -1,16 +1,19 @@
 # 📚 Livro de Receitas
 
 Uma aplicação web simples e elegante para gerenciar suas receitas favoritas, construída com HTML, CSS e JavaScript puro.
+Alunos:
+- Amanda Ferreira Dahm
+- Alessandro Ribeiro Moreira
 
 ## 🌟 Funcionalidades
 
-- ✨ Interface moderna e responsiva
-- 🔐 Sistema de autenticação (login e cadastro)
-- 📝 Cadastro de receitas com nome, ingredientes e modo de preparo
-- 📋 Listagem de receitas em cards interativos
-- 💾 Armazenamento local (localStorage) para manter suas receitas mesmo após fechar o navegador
-- 🗑️ Possibilidade de excluir receitas
-- 📱 Design responsivo para todos os dispositivos
+-  Interface moderna e responsiva
+-  Sistema de autenticação (login e cadastro)
+-  Cadastro de receitas com nome, ingredientes e modo de preparo
+-  Listagem de receitas em cards interativos
+-  Armazenamento local (localStorage) para manter suas receitas mesmo após fechar o navegador
+-  Possibilidade de excluir receitas
+-  Design responsivo para todos os dispositivos
 
 ## 🚀 Como Usar
 
@@ -21,7 +24,7 @@ git clone https://github.com/mandsd/Livro-de-receitas.git
 
 2. Abra o arquivo `index.html` em seu navegador
 
-Ou simplesmente acesse: [URL_DO_GITHUB_PAGES] (se disponível)
+Ou simplesmente acesse: [URL_DO_GITHUB_PAGES] 
 
 ## 📱 Como Usar a Aplicação
 
@@ -72,10 +75,3 @@ O projeto utiliza variáveis CSS que podem ser facilmente personalizadas no arqu
 }
 ```
 
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 🤝 Contribuindo
-
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
