@@ -24,7 +24,7 @@ git clone https://github.com/mandsd/Livro-de-receitas.git
 
 2. Abra o arquivo `index.html` em seu navegador
 
-Ou simplesmente acesse: [URL_DO_GITHUB_PAGES] 
+Ou simplesmente acesse: [https://mandsd.github.io/Livro-de-receitas/] 
 
 ## 📱 Como Usar a Aplicação
 
