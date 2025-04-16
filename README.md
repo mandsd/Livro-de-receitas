@@ -5,6 +5,7 @@ Uma aplicação web simples e elegante para gerenciar suas receitas favoritas, c
 ## 🌟 Funcionalidades
 
 - ✨ Interface moderna e responsiva
+- 🔐 Sistema de autenticação (login e cadastro)
 - 📝 Cadastro de receitas com nome, ingredientes e modo de preparo
 - 📋 Listagem de receitas em cards interativos
 - 💾 Armazenamento local (localStorage) para manter suas receitas mesmo após fechar o navegador
@@ -15,7 +16,7 @@ Uma aplicação web simples e elegante para gerenciar suas receitas favoritas, c
 
 1. Clone este repositório:
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
+git clone https://github.com/mandsd/Livro-de-receitas.git
 ```
 
 2. Abra o arquivo `index.html` em seu navegador
@@ -24,19 +25,28 @@ Ou simplesmente acesse: [URL_DO_GITHUB_PAGES] (se disponível)
 
 ## 📱 Como Usar a Aplicação
 
-1. **Adicionar Nova Receita:**
+1. **Criar Conta:**
+   - Clique em "Criar cadastro"
+   - Preencha nome, email e senha
+   - Clique em "Criar Conta"
+
+2. **Login:**
+   - Digite seu email e senha
+   - Clique em "Entrar"
+
+3. **Adicionar Nova Receita:**
    - Clique em "Nova Receita" no menu
    - Preencha o nome da receita
    - Liste os ingredientes (um por linha)
    - Descreva o modo de preparo
    - Clique em "Salvar Receita"
 
-2. **Visualizar Receitas:**
+4. **Visualizar Receitas:**
    - Clique em "Minhas Receitas" no menu
    - Clique em qualquer card para expandir e ver os detalhes
    - Clique novamente para recolher
 
-3. **Excluir Receita:**
+5. **Excluir Receita:**
    - Expanda a receita desejada
    - Clique no botão "Excluir Receita"
    - Confirme a exclusão
@@ -55,10 +65,10 @@ O projeto utiliza variáveis CSS que podem ser facilmente personalizadas no arqu
 
 ```css
 :root {
-    --primary-color: #2ecc71;
-    --secondary-color: #27ae60;
-    --background-color: #f5f6fa;
-    --text-color: #2c3e50;
+    --primary-color: #1a237e;
+    --secondary-color: #283593;
+    --background-color: #e8eaf6;
+    --text-color: #1a237e;
 }
 ```
 
@@ -69,4 +79,3 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 🤝 Contribuindo
 
 Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
